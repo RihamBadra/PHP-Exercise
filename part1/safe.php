@@ -4,7 +4,6 @@ require"safe.php";
 session_start();
 session_destroy();
 
-if($conn){
 
 $username=$_GET["username"];
 $password=$_GET["password"];
@@ -22,24 +21,13 @@ session_start();
 $_SESSION['isloggedin']=1;
 $_SESSION['username']=$username;
 header('location:home.php');
-
 }else{
 echo"Wrong Password";  
 header('location:home.php');
-
-}
 }else{
 echo"This Username is not registered,Please click on register";
 header('location:home.php');
 }
-}
-}
 
-else{
-echo"Connection Error";
-header('location:home.php');
-
-
-}
 
 ?>
