@@ -311,7 +311,7 @@ body {
               Login
               <span class="underline"></span>
             </button>
-            <form class="form form-login" method="get" action="safe.php">
+            <form class="form form-login" method="get" action="part1/safe.php">
               <fieldset>
                 <legend>Please, enter your email and password for login.</legend>
                 <div class="input-block">
